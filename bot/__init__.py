@@ -1,0 +1,1 @@
+from bot.core.bot import TelethonBot
