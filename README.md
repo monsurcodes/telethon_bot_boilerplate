@@ -26,35 +26,6 @@ This boilerplate is ideal for developers who want to build feature-rich Telegram
 - ✅ **Example Plugins**: Starter plugins (`start`, `owner_commands`) demonstrating best practices
 - ✅ **Event Dispatcher**: Clean abstraction over Telethon's event system
 
-## Project Structure
-
-```
-telethon_bot_boilerplate/
-├── main.py                    # Entry point to start the bot
-├── requirements.txt           # Python dependencies
-├── .env                       # Environment variables (create from .env.example)
-├── telethon_bot.session       # Session file (auto-generated)
-├── LICENSE                    # MIT License
-├── logs/                      # Log files directory
-│   └── bot.log               # Application logs
-└── bot/                       # Main bot package
-    ├── __init__.py           # Exports TelethonBot class
-    ├── config.py             # Configuration loader (reads from .env)
-    ├── constants.py          # Bot constants (messages, etc.)
-    ├── core/                 # Core bot functionality
-    │   ├── bot.py           # Main TelethonBot class
-    │   ├── base_plugin.py   # Abstract base class for all plugins
-    │   └── dispatcher.py    # Event registration wrapper
-    ├── helpers/              # Utility modules
-    │   ├── command_patterns.py  # Regex patterns for commands
-    │   ├── logger.py            # Logging configuration
-    │   └── plugin_loader.py     # Plugin discovery mechanism
-    ├── middlewares/          # Event middlewares
-    │   └── owner_check.py   # Decorator to restrict commands to bot owner
-    └── plugins/              # Bot plugins (features)
-        ├── start.py         # /start command handler
-        └── owner_commands.py # Owner-only commands (/logs, /stats)
-```
 
 ### Directory Purposes
 
